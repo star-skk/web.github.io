@@ -1,0 +1,108 @@
+--告诉浏览器使用html5-->
+ <!DOCTYPE html>
+<!--设置浏览器语言-->
+<html lang="zh">
+<html>
+    <!--表现元素置于head-->
+    <head>
+        <!--设置使用的字符集-->
+        <mate charset="utf-8">
+        <!--设置搜索关键字-->
+        <mate name="keywords"content="鸿,258">
+        <!--设置网页描述-->
+        <mate name="description"content="鸿的个人主页">
+        <!--网页名字-->
+        <title>鸿</title>
+        <!--重置掉默认--->
+        <link rel="stylesheet"href="../reset.css">
+        <!--设置格式表现-->
+        <style>
+            .index{
+                height:30px ;
+                width: 50px;
+                margin: 60px auto 0px 20px;
+                line-height: 30px;
+                background-color: grey;
+                position: sticky;
+                top: 0px;
+                border:7px rgba(107, 241, 197, 0.945) solid;
+
+            }
+            .index:hover .navigation{
+                display: block;
+            }
+            /*以下小方块*/
+            /*--设置背景大小*/
+            .navigation{  
+               display: none;
+                height: 200px;
+                width: 520px;
+                margin: 0px  auto 0px -20PX;
+                background-color: rgb(129, 90, 221);
+                background-image: url("../picture/1.jpg");
+                background-size: auto 100%;
+                *position: sticky;
+                top:30px;
+                /*倒角*/
+                border-radius: 15px;
+                border:8px rgba(107, 241, 197, 0.945) solid;
+                z-index: 999;
+            }
+            /*设置行块*/
+            .navigation .navigation1{
+                height: 40px;
+                /*line-height行高与父元素的height一样时文字居中*/
+                line-height: 40px;
+                padding: 0px 20px ;
+            }
+            /*设置移动到行的效果*/
+            .navigation1:hover{
+                background-color: rgb(199, 229, 250);
+
+            }
+            /*设置移入到文字效果*/
+            .navigation1 a:hover{
+                color:rgb(29, 2, 128) ;
+            }
+            .navigation a::before{
+                content:"☞";
+            }
+            
+            body{
+                height: 2000px;
+            }
+        
+        </style>
+
+    </head>
+    <!--网页结构置于body-->
+    <body>
+        <div class="index">
+            <p>学习站</p>
+        
+        <div class="navigation">
+            <!--学习网站链接-->
+           <div class="navigation1"><a href="https://www.bilibili.com/">bilibili</a>
+           <a href="https://www.icourse163.org/">中国mooc</a>
+           <a href="http://www.itheima.com/">黑马程序</a>
+           <a href="https://www.imooc.com/">慕课网</a>
+           <a href="https://study.163.com/">网易云课堂</a></div>
+           <div class="navigation1"><a href="https://www.bangongziyuan.com/">办公资源网</a>
+           <a href="http://1nami.com/">1纳米学习网站导航</a>
+           <a href="http://oeasy.org/">oeasy</a>
+           <a href="http://1ketang.com/">壹课堂</a>
+           <a href="http://www.dxzy163.com/">大学资源网</a></div>
+           <div class="navigation1"><a href="https://www.tjxz.cc/">田间小站</a>
+           <a href="https://www.hjenglish.com/">沪江英语</a>
+           <a href="https://uiiiuiii.com/">优优教程网</a>
+           <a href="https://www.gogoup.com/">站酷高高手</a>
+           <a href="https://www.ehow.com/">Ehow(生活技巧类网站)</a></div>
+           <div class="navigation1"><a href="http://www.nlc.cn/">中国国家图书馆</a>
+           <a href="https://www.mvyxws.com/">医学微视</a></div>          
+        </div>
+    </div>
+        
+
+    </body>
+
+    </html>
